@@ -1,0 +1,253 @@
+#slide{
+  width:100%;
+}
+.slide_wrap{
+  position:relative;
+  font-size:0;
+  overflow: hidden;
+}
+#slide .mbanner{
+  width:200%;
+  display:flex;
+}
+
+#slide .slide_wrap img{
+  width:100%;
+}
+#slide .move-circle{
+  position:absolute;
+  top:50%;
+  right:10%;
+}
+#slide .move-circle li{
+  width:16px;
+  height:16px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin:10px 0px;
+  cursor:pointer;
+}
+#slide .move-circle .on{
+  background-color: #BF332D;
+}
+
+#slide .box ul{
+  display:flex;
+  position:relative;
+}
+
+#slide .box ul li img{
+  width:100%;
+}
+#slide .box >ul div{
+  position:absolute;
+  top:100px;
+  margin-left:106px;
+  transform: translateY(-100);
+}
+#slide .text_box h2{
+  font-family: 'CookieRun-Regular';
+  font-size:56px;
+  font-weight: bold;
+  margin-bottom:30px;
+}
+#slide .first, .first a{
+  color:#BF332D;
+}
+#slide .text_box a{
+  font-size:23px;
+  font-weight: bold;
+}
+#slide .second a{
+color:#333;
+}
+#slide ul li p{
+  width:240px;
+  height:68px;
+  border: 3px solid #BF332D;
+  text-align:center;
+  line-height: 68px;
+}
+#slide .second p:last-of-type{
+  border: 3px solid #333;
+}
+/* 2.NewArrivals*/
+
+#arrival h2{
+  text-align: center;
+  font-size:42px;
+  font-weight:bold;
+  margin-top:140px;
+}
+#arrival .select_menu{
+  display:flex;
+  justify-content: center;
+  margin-top:70px;
+}
+#arrival .select_menu li{
+  margin:0px 15px 50px 15px;
+}
+#arrival .select_menu li a{
+  font-size:20px;
+  font-weight:bold;
+  color:#333;
+}
+#arrival .select_menu li a:hover{
+  color:#BF332D;
+  border-bottom:2px solid #BF332D;
+}
+
+#arrival .img_box{
+  display:flex;
+  justify-content: space-around;
+  margin-top:100px;
+}
+#arrival .img_box li img{
+  cursor:pointer;
+}
+#arrival .img_box li p:first-of-type{
+  font-size:20px;
+  margin:30px 0px 10px 0px;
+  text-transform: uppercase;
+}
+#arrival .img_box li p:last-of-type{
+  font-size:18px;
+  margin-bottom:40px;
+  text-transform: uppercase;
+}
+#arrival .img_box li a{
+  font-size:16px;
+  color:#BF332D;
+  font-weight: bold;
+}
+/* 박스 겹치기 */
+#arrival #container{
+  position:relative;
+  width:1420px;
+  height:1618px;
+}
+#arrival .tabcont{
+  position:absolute;
+  width:1420px;
+}
+#arrival .tabcont:first-of-type{
+  background-color: #fff;
+  z-index: 4;
+}
+#arrival .tabcont:nth-of-type(2){
+  background-color: #fff;
+  z-index: 3;
+}
+#arrival .tabcont:nth-of-type(3){
+  background-color: #fff;
+  z-index: 2;
+}
+#arrival .tabcont:last-of-type{
+  background-color: #fff;
+  z-index:1;
+}
+.on2{
+  color:#BF332D !important;
+  border-bottom:2px solid #BF332D;
+}
+
+
+
+/* 3.쿼카 빌리지 */
+#village{
+  background-image: url(/img/village.jpg);
+  width:100%;
+  height:750px;
+  background-size: cover;
+  position:relative;
+  overflow: hidden;
+}
+#village .paralax_title{
+  font-family:'CookieRun-Regular';
+  font-size:200px;
+  color:#222;
+  position:absolute
+}
+#village .p01{
+  top:50px;
+  left:-50%;
+}
+#village .p02{
+  top:360px;
+  right:-300px;
+}
+
+
+#village .outer_container{
+  position:relative;
+}
+#village .img_box{
+  position:absolute;
+  top:-70px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+#village .img_box img{
+  width:635px;
+  height:635px;
+}
+
+
+
+/* 네번째 섹션 */
+#sns h2{
+  text-align:center;
+  font-size:42px;
+  font-weight:bold;
+  margin-top:80px;
+}
+
+#sns .slide_wrap{
+  position:relative;
+  width:1420px;
+}
+#sns .slide_box{
+  margin-top:80px;
+}
+#sns .slide_box img{
+  width:502px;
+  height:502px;
+  margin-left:60px;
+}
+#sns .slide_box{
+  display:flex;
+}
+
+#sns .slide_box div:nth-child(2) img{
+  width:36px;
+  height:36px;
+}
+#sns .slide_box .txt_box{
+  position:relative;
+}
+#sns .slide_box .txt_box img{
+  position:absolute;
+}
+#sns .slide_box .txt_box img:first-of-type{
+  left:40px;
+}
+#sns .slide_box .txt_box img:last-of-type{
+  bottom:0px;
+  left: 700px;
+}
+#sns i{
+  font-size:52px;
+  color:#333;
+  cursor:pointer;
+  position:absolute;
+  /* top:0; */
+}
+#sns .bi-arrow-left-short{
+  left:-10px;
+  top:35%;
+}
+#sns .bi-arrow-right-short{
+  right:-50px;
+  top:37%;
+}

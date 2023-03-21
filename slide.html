@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .wrap_slide{
+    background-color: yellow;
+    width:300px;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    z-index:1;
+  }
+
+  #wrap_all{
+    position:relative;
+    z-index:1000;
+    left:0;
+    top:0;
+    background-color: aquamarine;
+  }
+
+  .menu_open{
+  top:0;
+  left:300px !important;
+}
+
+</style>
+
+
+</head>
+<body>
+  <div class="wrap_slide">
+    <h2>슬라이드 될 곳</h2>
+  </div>
+  <div id="wrap_all" class="menu_open">
+    <h2>전체</h2>
+  </div>
+</body>
+</html>

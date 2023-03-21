@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CookieRun-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'Pretendard-Regular';
+  /* overflow-x: hidden; */
+  color:#333;
+}
+a{
+  text-decoration: none;
+}
+
+.wrap{
+  margin:0px auto;
+  width:1420px;
+}
+
+.side-menu-open{
+  top:0px;
+  left:300px !important;
+}
+/* 사이드 메뉴 영역 */
+
+#wrap_all{
+  position:relative;
+  z-index:1000;
+  right:0;
+  top:0;
+  background-color: #fff;
+  transition: .7s;
+}
+
+.side_content{
+  width:400px;
+  position:fixed;
+  top:0;
+  right:0;
+  height:100%; 
+  z-index:33;
+  background-color: violet;
+}
+
+
+#toggleBtn:checked ~ #wrap_all{
+  top:0;
+  right:300px !important;
+}
+
+#toggleBtn{
+  z-index:9999;
+}
+label i{
+  cursor:pointer;
+}
